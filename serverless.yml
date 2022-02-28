@@ -1,0 +1,19 @@
+# serverless.yml
+
+service: ao22-smt-alerts
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: ap-southeast-2
+
+functions:
+  teams-webhook:
+    handler: src/lambdas/smtAlerts.handler
+    method: get
+    environment:
+      isTeamsAlertsEnabled: false
+      webHookURL: 'https://m365x278630.webhook.office.com/webhookb2/de1dc647-aa5d-404c-9664-57ff8491d718@98064929-c7a9-47e5-9710-4bafd89e3b0f/IncomingWebhook/ace5a73f5459455a8ffc9e9c4d2960e3/1a0bade3-43af-4ccf-8f81-68e19fea43b7'
+      matchStartTime: '00:00:00'
+      matchEndTime: '13:59:59'

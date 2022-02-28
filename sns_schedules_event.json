@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:ap-southeast-2:731852885635:CloudWatch_Alarms_UAT_SnsSchedule:6af578d4-c042-4e62-8c91-ebc9bbac6fc8",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "32e59020-643e-5349-9326-ca42a1780648",
+                "TopicArn": "arn:aws:sns:ap-southeast-2:731852885635:CloudWatch_Alarms_UAT_SnsSchedule",
+                "Subject": "ALARM: \"Lambda-SnsSchedule-UAT\" in Asia Pacific (Sydney)",
+                "Message": "{\"AlarmName\":\"Lambda-SnsSchedule-UAT\",\"AlarmDescription\":\"This alarm is to check whenever SnsSchedule lambda is invoked in UAT (For Schedule) and update via email for this event\",\"AWSAccountId\":\"731852885635\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (20/01/22 02:02:00)] was greater than or equal to the threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2022-01-20T02:03:50.895+0000\",\"Region\":\"Asia Pacific (Sydney)\",\"AlarmArn\":\"arn:aws:cloudwatch:ap-southeast-2:731852885635:alarm:Lambda-SnsSchedule-UAT\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"Invocations\",\"Namespace\":\"AWS/Lambda\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"ao-scores-app-uat-snsSchedule\",\"name\":\"FunctionName\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+                "Timestamp": "2022-01-20T02:03:50.948Z",
+                "SignatureVersion": "1",
+                "Signature": "maordMLA/ZcdxnLZMqHO4UNN8JAHHxKr0sEkuxOqh7+UpWGzzinbaAC3FCcbiS5n5SOiVBJdwwPD3xVCCs8CURJYCc8UR07WkkJNrthNXTSC7aZfIzMJcgK1fkJpLNQFPR1Rb8QXp6dQZRaCbjg9hJ80pAu/bYJW3ioGhcrRhsuCy60xCYDqqPiwPJdwKZVlva10qXFYQ0shLq1i0mTbJAgTbP8eO1OOhZVjOoH7mjy509agPCUHHXPt1qXc3NHxTzPrnnUniPG0SCNKYT9eJqLra0oYXwac9sccTQp6KBuYaZ5ZWg5zZWvy1kZN75vPzsoDleP6uvJRT8HWz75BvQ==",
+                "SigningCertUrl": "https://sns.ap-southeast-2.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+                "UnsubscribeUrl": "https://sns.ap-southeast-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:ap-southeast-2:731852885635:CloudWatch_Alarms_UAT_SnsSchedule:6af578d4-c042-4e62-8c91-ebc9bbac6fc8",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}
